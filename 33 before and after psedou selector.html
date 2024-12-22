@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before and after pseoudo selector</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            }
+header::before{
+    content:" ";
+    background:url('image.jpg')
+            no-repeat center center/cover ;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 110%;
+            z-index: -1;
+            opacity: 0.4;
+}
+        .navigation {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            display: flex;
+            font: size 20px;
+            /* flex-direction: row; */
+        }
+
+        li {
+            cursor: pointer;
+            list-style: none;
+            padding: 20px 23px;
+        }
+
+        section {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            height: 500px;
+            margin: 3px 23px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* border: 2px solid red; */
+            justify-content: center;
+        }
+
+        h1 {
+            font-size: 4rem;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        /* section::before{
+            content:"this is a content";
+        } */
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+     </header>
+        <section>
+            <h1> Welcome to coding world
+            </h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum amet cupiditate, eveniet asperiores dicta, veritatis, sit rem repellendus fugit est ab voluptatibus? Commodi perspiciatis necessitatibus, blanditiis officia tempore quidem exercitationem repellendus vel voluptates fugit aliquam odit voluptas quod ullam officiis illum, placeat id ipsa mollitia voluptatibus beatae assumenda eveniet, qui culpa! Error iure, aliquid recusandae eaque eum illo quas commodi praesentium tempore possimus corporis reiciendis quam doloribus, voluptatum rem nemo amet enim dolorum ratione dolorem nesciunt minima ut! Laudantium quod rem ipsam quis quos architecto aliquid, incidunt id eos minima numquam minus, natus nobis hic? Laudantium esse minima molestiae, non magni distinctio, ipsum sunt, illo ut harum architecto aut quidem? A quis repellendus quos dicta excepturi vitae eligendi assumenda molestias.
+          </p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo ratione, veniam mollitia a hic perferendis repellendus voluptas consequatur cupiditate fugiat eligendi. Velit ad hic iste laboriosam dolorum, amet excepturi facere odio enim qui sed error quam officiis, deleniti accusantium dignissimos commodi impedit odit maxime asperiores pariatur, esse id officia. Veritatis ducimus adipisci excepturi optio, sed incidunt aut dolorum illum debitis quis, modi, laborum blanditiis harum culpa deleniti explicabo molestiae tempore temporibus maiores dolorem! Impedit quidem quaerat voluptatum quae vel quo?
+          </p>
+          <br>
+          <p>
+
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur totam blanditiis architecto fuga sequi iure. Pariatur ratione porro reprehenderit dolore enim expedita, iure a! Omnis sunt quos repellat ducimus sapiente, culpa, odit debitis repudiandae illum aliquid, voluptate aut nostrum velit praesentium delectus nobis nemo vero? Unde itaque maxime quibusdam laudantium repellat vero illum, quasi assumenda deserunt distinctio asperiores ipsum qui!
+
+          </p>
+        </section>
+</body>
+
+</html>
